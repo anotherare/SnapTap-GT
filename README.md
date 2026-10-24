@@ -18,7 +18,7 @@ Hecho por **GT**
 ## Descarga
 
 Descargá la última versión desde **[Releases](https://github.com/anotherare/SnapTap-GT/releases/latest)**.
-No necesita instalación: ejecutá `SnapTap.exe` y listo.
+No necesita instalación: ejecutá `SnapTap.GT.exe` y listo.
 
 ## ¿Qué hace?
 
