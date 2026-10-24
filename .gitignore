@@ -1,0 +1,24 @@
+# Compilación
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.exp
+*.lib
+build/
+out/
+bin/
+x64/
+Debug/
+Release/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+# IDE
+.vs/
+.vscode/
+*.user
+*.suo
