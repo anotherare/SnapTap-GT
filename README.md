@@ -5,15 +5,18 @@
 **SOCD cleaner para W/A/S/D con interfaz de cristal oscura**
 
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?logo=windows&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-17-00599C?logo=cplusplus&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Build](https://img.shields.io/github/actions/workflow/status/TU-USUARIO/snap-tap/build.yml?label=build)
+![Licencia](https://img.shields.io/badge/licencia-propietaria-red)
 
 Hecho por **GT**
 
 </div>
 
 ---
+
+## Descarga
+
+Descargá la última versión desde **[Releases](https://github.com/anotherare/SnapTap-GT/releases/latest)**.
+No necesita instalación: ejecutá `SnapTap.exe` y listo.
 
 ## ¿Qué hace?
 
@@ -34,12 +37,6 @@ Funciona con un hook de teclado de bajo nivel y envía las teclas por scancode, 
 - **Bandeja del sistema** con icono dinámico y menú para cambiar de tema.
 - Los ajustes se guardan automáticamente en `HKCU\Software\GT\SnapTap`.
 
-## Capturas
-
-> Agregá tus capturas en `docs/` y enlazalas acá:
->
-> `![Panel](docs/panel.png)`
-
 ## Uso
 
 | Acción | Cómo |
@@ -50,52 +47,11 @@ Funciona con un hook de teclado de bajo nivel y envía las teclas por scancode, 
 | Cambiar de tema | Sección **Temas** o menú de la bandeja |
 | Salir | Menú de la bandeja → **Salir** (o desactivá *Cerrar a la bandeja*) |
 
-## Compilar
+## Antivirus
 
-Requiere Windows y un compilador C++ con el SDK de Windows (GDI+).
-
-### Con MSVC
-
-Abrí *Developer Command Prompt for VS* y ejecutá:
-
-```bat
-build.bat
-```
-
-O manualmente:
-
-```bat
-cl /O2 /EHsc /utf-8 src\main.cpp /Fe:SnapTap.exe /link /SUBSYSTEM:WINDOWS
-```
-
-### Con CMake
-
-```bat
-cmake -S . -B build -A x64
-cmake --build build --config Release
-```
-
-El ejecutable queda en `build\Release\SnapTap.exe`.
-
-### Con MinGW-w64
-
-```bash
-g++ -O2 -municode -mwindows src/main.cpp -o SnapTap.exe \
-    -lgdiplus -lgdi32 -lmsimg32 -lwinmm -ldwmapi -ladvapi32 -lshell32 -luser32 -static
-```
-
-## Estructura
-
-```
-snap-tap/
-├── src/main.cpp          # Código fuente (lógica, hook e interfaz GDI+)
-├── CMakeLists.txt
-├── build.bat
-├── .github/workflows/    # Compilación automática en GitHub Actions
-├── CHANGELOG.md
-├── LICENSE
-└── README.md
-```
+Como Snap Tap intercepta el teclado para resolver los conflictos de teclas, algunos antivirus pueden
+marcarlo como falso positivo. Es una limitación de cualquier programa que usa un hook de teclado.
+Si querés verificar tu descarga, compará el hash SHA256 que figura en la descripción de cada release.
 
 ## Aviso
 
@@ -105,4 +61,4 @@ cada juego o competencia antes de hacerlo.
 
 ## Licencia
 
-[MIT](LICENSE) © 2026 GT
+Software propietario, de uso gratuito. Ver [LICENSE](LICENSE). © 2026 GT
