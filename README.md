@@ -9,6 +9,8 @@
 
 Hecho por **GT**
 
+<img src="panel.png" alt="Panel de Snap Tap" width="640">
+
 </div>
 
 ---
@@ -16,7 +18,7 @@ Hecho por **GT**
 ## Descarga
 
 Descargá la última versión desde **[Releases](https://github.com/anotherare/SnapTap-GT/releases/latest)**.
-No necesita instalación: ejecutá `SnapTap.GT.exe` y listo.
+No necesita instalación: ejecutá `SnapTap.exe` y listo.
 
 ## ¿Qué hace?
 
